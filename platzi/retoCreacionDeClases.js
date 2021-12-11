@@ -1,3 +1,5 @@
+alert('Working!');
+
 class Student {
     constructor({
         name ,
@@ -46,8 +48,8 @@ const desarrolloWeb = new learningPath({
     nombre : 'Desarrollo Web' ,
     cursos : 107 ,
     cantidadCursosAprobados : 15 ,
-    clasificacionCursos = ['Básica' , 'Intermedia' , 'Avanzado' , 'Complementario'] ,
-    avanceEstudiante = 10
+    clasificacionCursos : ['Básica' , 'Intermedia' , 'Avanzado' , 'Complementario'] ,
+    avanceEstudiante : 10
 });
 
 console.table(desarrolloWeb);
