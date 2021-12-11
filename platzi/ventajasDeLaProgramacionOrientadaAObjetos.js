@@ -54,22 +54,20 @@ class Student {
         name ,
         username ,
         point ,
-        socialMedia = {
-            twitter = undefined ,
-            facebook = undefined
-        } ,
+        twitter = undefined ,
+        facebook = undefined ,
         aprovesCourses = [] ,
         learningPaths = [] ,
     }) {
-        this.name = name,
-        this.username = username,
-        this.point = point ,
+        this.name = name;
+        this.username = username;
+        this.point = point ;
         this.socialMedia = {
             twitter ,
             facebook
-        } ,
-        this.aprovesCourses = aprovesCourses ,
-        this.learningPaths = learningPaths 
+        } ;
+        this.aprovesCourses = aprovesCourses ;
+        this.learningPaths = learningPaths;
     }
 }
 
