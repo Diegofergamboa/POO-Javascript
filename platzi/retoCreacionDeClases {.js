@@ -17,3 +17,37 @@ class Student {
         this.aprovesCourses = aprovesCourses ;
     }
 }
+
+//! Clase de learningPath
+
+class learningPath {
+    constructor({
+        nombre ,
+        cursos = 0,
+        cantidadCursosAprobados ,
+        clasificacionCursos ,
+        avanceEstudiante = 0
+        }) 
+        // Inicializaciones de atributos con this.
+        {
+        this.nombre = nombre;
+        this.cursos = cursos; 
+        this.cantidadCursosAprobados = cantidadCursosAprobados;
+        this.clasificacionCursos = clasificacionCursos;
+        this.avanceEstudiante = avanceEstudiante;
+        }
+};
+
+//! Instancias.
+
+//* Desarollo Web.
+
+const desarrolloWeb = new learningPath({
+    nombre : 'Desarrollo Web' ,
+    cursos : 107 ,
+    cantidadCursosAprobados : 15 ,
+    clasificacionCursos = ['Básica' , 'Intermedia' , 'Avanzado' , 'Complementario'] ,
+    avanceEstudiante = 10
+});
+
+console.table(desarrolloWeb);
