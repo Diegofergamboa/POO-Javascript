@@ -21,16 +21,20 @@ natalia.name = 'Nath';
 natalia.aprobarCurso('Finanzas');
 
 function Student(name, age, cursos) {
-    this.name = 'Nombre';
-    this.age = 'Nombre';
-    this.cursos = 'Nombre';
+    this.name = name;
+    this.age = age;
+    this.cursos = cursos;
 }
 // Creando método del prototipo Student
-Student.prototype.cursos = (nuevoCurso) => {
+Student.prototype.cursos = function aprobarCurso (nuevoCurso) {
     this.cursos.push(nuevoCurso);
 }
 // Creando una instancia del prototipo Student
-const Diego = new Student(
-    'Diego', 25 , ['Programación Orientada a objetos', 'React Avanzado']
+const diego = new Student(
+    'Diego',25,[
+                    'Programación Orientada a objetos' , 
+                    'React Avanzado'
+                ]
 );
-console.log(Diego);
+
+
