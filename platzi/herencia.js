@@ -1,3 +1,27 @@
+
+
+
+
+//! Clase madre.
+class Student {
+    constructor({
+        name ,
+        username ,
+        point ,
+        twitter = undefined ,
+        facebook = undefined ,
+        aprovesCourses = [] ,
+    }) {
+        this.name = name;
+        this.username = username;
+        this.point = point ;
+        this.socialMedia = {
+            twitter ,
+            facebook
+        } ;
+        this.aprovesCourses = aprovesCourses ;
+    }
+}
 class Course {
     constructor({
         name ,
@@ -25,41 +49,14 @@ class Course {
         }
     }
 }
-
-
-
 const cursoProgramacionBasica = new Course({
     name :'Curso de Programación básica' ,
-    isFree = true
-})
-
+    isFree : true
+});
 const cursoDefinitoHTMLyCSS = new Course({
     name : 'Curso Definitivo de HTML y CSS' ,
-    lang = 'English'
+    lang : 'English'
 })
-
-
-//! Clase madre.
-class Student {
-    constructor({
-        name ,
-        username ,
-        point ,
-        twitter = undefined ,
-        facebook = undefined ,
-        aprovesCourses = [] ,
-    }) {
-        this.name = name;
-        this.username = username;
-        this.point = point ;
-        this.socialMedia = {
-            twitter ,
-            facebook
-        } ;
-        this.aprovesCourses = aprovesCourses ;
-    }
-}
-
 class FreeStudent extends Student{
     constructor(props) {
         super(props);
@@ -96,43 +93,10 @@ class ExpertStudent extends Student{
 }
 
 const diego = new FreeStudent({
-    name : 'Diego' ,
-    username : 'diegofergamboa' ,
-    point : 10000 ,
-    socialMedia : {
-        twitter : 'diegogamboaor' ,
-        facebook : '¿Quién usa Facebook? xD'
-    } ,
-    learningPaths: [
-        {
-            name : 'Escuela de Desarollo Web' ,
-            courses : ['Responsive design' , 'HTML' , 'CSS']
-        } ,
-        {
-            name : 'Escuela de DataScience' ,
-            courses : ['Básico de Python' , 'POO con Python' , 'Rankers']
-        } ,
-    ]
+    name : 'diego' ,
 })
 const miguel = new BasicStudent({
-    name : 'Diego' ,
-    username : 'diegofergamboa' ,
-    point : 10000 ,
-    socialMedia : {
-        twitter : 'diegogamboaor' ,
-        facebook : '¿Quién usa Facebook? xD'
-    } ,
-    aprovesCourses : ['Cursos definitivo de CSS' , 'Mateámtica financiera'] ,
-    learningPaths: [
-        {
-            name : 'Escuela de Desarollo Web' ,
-            courses : ['Responsive design' , 'HTML' , 'CSS']
-        } ,
-        {
-            name : 'Escuela de DataScience' ,
-            courses : ['Básico de Python' , 'POO con Python' , 'Rankers']
-        } ,
-    ]
+    name : 'miguel' ,
 })
 
 
