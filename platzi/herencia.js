@@ -26,35 +26,15 @@ class Course {
     }
 }
 
-const claseIntroduccionPoo = new Clases ({
-    nombreClase : "Introducción a la Programación Orientada a Objetos" ,
-    duracion : 120
-}),
-const claseintroduccionFinanzas = new Clases ({
-    nombreClase : "Clase de Introduccion a las Finanzas" ,
-    duracion : 130
-}),
-const clasedeIntroduccioaEso = new Clases ({
-    nombreClase : "Eso" ,
-    duracion : 40
-}),
+
 
 const cursoProgramacionBasica = new Course({
-    nombre :'Curso de Programación básica' ,
-    clases : [
-        claseIntroduccionPoo ,
-        claseintroduccionFinanzas ,
-        clasedeIntroduccioaEso
-    ] ,
+    name :'Curso de Programación básica' ,
     isFree = true
 })
 
 const cursoDefinitoHTMLyCSS = new Course({
-    nombre : 'Curso Definitivo de HTML y CSS' ,
-    clases : [
-        claseIntroduccionPoo ,
-        clasedeIntroduccioaEso
-    ] ,
+    name : 'Curso Definitivo de HTML y CSS' ,
     lang = 'English'
 })
 
