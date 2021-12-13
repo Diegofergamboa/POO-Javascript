@@ -1,4 +1,23 @@
+class Comment {
+    constructor({
+        content ,
+        studentName,
+        studentRole = 'estudiante'
+    }) {
+        this.content = content;
+        this.studentName = studentName;
+        studentRole = studentRole;
+        this.likes = 0;
+    }
 
+    publicar() {
+        console.log(`
+            ${this.studentName}, con rol , ${this.studentRole}
+        `);
+        console.log(this.likes);
+        console.log(this.content);
+    }
+}
 
 class Student {
     constructor({
@@ -83,8 +102,16 @@ class TeacherStudent extends Student {
     const comment = new Comment({
         content: commentContent,
         studentName: this.name,
-        studentRole: "profesor",
+        studentRole : "profesor"
     });
     comment.publicar();
     }
 }
+
+const diego = new TeacherStudent({
+    name :'Diego' ,
+    username: 'diegop' ,
+    email: 'diegoœiego.com',
+    instagram :'diegoaaaaa'
+})
+
